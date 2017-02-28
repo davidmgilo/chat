@@ -85,6 +85,7 @@
 					<!-- /.box-body -->
 					<div class="box-footer">
 						<form action="#" method="post">
+							{{csrf_field()}}
 							<div class="input-group">
 								<input type="text" name="message" placeholder="Type Message ..." class="form-control">
 								<span class="input-group-btn">
