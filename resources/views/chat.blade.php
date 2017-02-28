@@ -75,7 +75,7 @@
 					<!-- /.box-body -->
 					<div class="box-footer">
 
-						<chat-form :user="{{ Auth::user() }}" v-on:messageSent="addMessage"></chat-form>
+						<chat-form :user="{{ Auth::user() }}" v-on:messagesent="addMessage"></chat-form>
 
 
 					</div>

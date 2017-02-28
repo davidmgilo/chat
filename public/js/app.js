@@ -11278,7 +11278,7 @@ var app = new Vue({
         addMessage: function addMessage(message) {
             this.messages.push(message);
 
-            axios.post('/messages', message).then(function (response) {
+            axios.post('/chat', message).then(function (response) {
                 console.log(response.data);
             });
         }
@@ -12198,7 +12198,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     methods: {
         sendMessage: function sendMessage() {
-            this.$emit('messageSent', {
+            this.$emit('messagesent', {
                 user: this.user,
                 message: this.newMessage
             });
@@ -32961,12 +32961,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('form', {
-    attrs: {
-      "action": "#",
-      "method": "post"
-    }
-  }, [_c('div', {
+  return _c('div', [_c('div', {
     staticClass: "input-group"
   }, [_c('input', {
     directives: [{
@@ -32999,7 +32994,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('button', {
     staticClass: "btn btn-primary btn-flat",
     attrs: {
-      "type": "submit"
+      "type": "button"
     },
     on: {
       "click": _vm.sendMessage
