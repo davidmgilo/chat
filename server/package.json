@@ -9,5 +9,10 @@
   },
   "keywords": [],
   "author": "David <davidmgilo@gmail.com> (https://github.com/davidmgilo)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "ioredis": "^2.5.0",
+    "socket.io": "^1.7.3"
+  }
 }

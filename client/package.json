@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "David <davidmgilo@gmail.com> (https://github.com/davidmgilo)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "socket.io-client": "^1.7.3"
+  }
 }

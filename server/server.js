@@ -18,8 +18,6 @@ redis.on('pmessage', function(subscribed,channel, message) {
     io.emit(channel + ':' + message.event, message.data);
 });
 
-io.emit('chat:missatge');
-
 http.listen(3000, function(){
    console.log('Listening at port 3000')
 });
