@@ -1,39 +1,25 @@
-CKEditor 4
-==========
+CKEditor WebSpellChecker Plugin
+===============================
 
-Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.  
-http://ckeditor.com - See LICENSE.md for license information.
+This plugin brings Web Spell Checker (WSC) into CKEditor.
 
-CKEditor is a text editor to be used inside web pages. It's not a replacement
-for desktop text editors like Word or OpenOffice, but a component to be used as
-part of web applications and websites.
+WSC is "installation-less", using the web-services of [WebSpellChecker.net](http://www.webspellchecker.net/). It's an out of the box solution.
 
-## Documentation
+Installation
+------------
 
-The full editor documentation is available online at the following address:
-http://docs.ckeditor.com
+1. Clone/copy this repository contents in a new "plugins/wsc" folder in your CKEditor installation.
+2. Enable the "wsc" plugin in the CKEditor configuration file (config.js):
 
-## Installation
+        config.extraPlugins = 'wsc';
 
-Installing CKEditor is an easy task. Just follow these simple steps:
+That's all. WSC will appear on the editor toolbar and will be ready to use.
 
- 1. **Download** the latest version from the CKEditor website:
-    http://ckeditor.com. You should have already completed this step, but be
-    sure you have the very latest version.
- 2. **Extract** (decompress) the downloaded file into the root of your website.
+License
+-------
 
-**Note:** CKEditor is by default installed in the `ckeditor` folder. You can
-place the files in whichever you want though.
+Licensed under the terms of any of the following licenses at your choice: [GPL](http://www.gnu.org/licenses/gpl.html), [LGPL](http://www.gnu.org/licenses/lgpl.html) and [MPL](http://www.mozilla.org/MPL/MPL-1.1.html).
 
-## Checking Your Installation
+See LICENSE.md for more information.
 
-The editor comes with a few sample pages that can be used to verify that
-installation proceeded properly. Take a look at the `samples` directory.
-
-To test your installation, just call the following page at your website:
-
-	http://<your site>/<CKEditor installation path>/samples/index.html
-
-For example:
-
-	http://www.example.com/ckeditor/samples/index.html
+Developed in cooperation with [WebSpellChecker.net](http://www.webspellchecker.net/).
