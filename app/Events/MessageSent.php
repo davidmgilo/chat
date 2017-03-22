@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Events;
+namespace Davidmgilo\chat\Events;
 
-use App\Message;
-use App\User;
+use Davidmgilo\chat\Message;
+use Davidmgilo\chat\User;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Broadcasting\PrivateChannel;
