@@ -15870,6 +15870,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     methods: {
         url: function url(message) {
             return 'http:' + __WEBPACK_IMPORTED_MODULE_0_gravatar___default.a.url(message.user.email);
+        },
+        isFromUser: function isFromUser(message) {
+            return message.user.email == this.user.email;
         }
     }
 };
@@ -46661,13 +46664,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "direct-chat-messages"
   }, _vm._l((_vm.messages), function(message) {
     return _c('div', {
-      staticClass: "direct-chat-msg"
+      staticClass: "direct-chat-msg",
+      class: [_vm.isFromUser(message) ? 'right' : '']
     }, [_c('div', {
       staticClass: "direct-chat-info clearfix"
     }, [_c('span', {
-      staticClass: "direct-chat-name pull-left"
+      staticClass: "direct-chat-name",
+      class: [_vm.isFromUser(message) ? 'pull-right' : 'pull-left']
     }, [_vm._v(_vm._s(message.user.name))]), _vm._v(" "), _c('span', {
-      staticClass: "direct-chat-timestamp pull-right"
+      staticClass: "direct-chat-timestamp",
+      class: [_vm.isFromUser(message) ? 'pull-left' : 'pull-right']
     }, [_vm._v(_vm._s(message.created_at))])]), _vm._v(" "), _c('img', {
       staticClass: "direct-chat-img",
       attrs: {
