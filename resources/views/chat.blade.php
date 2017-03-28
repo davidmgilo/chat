@@ -28,7 +28,7 @@
 						<!-- Conversations are loaded here -->
 
 
-							<chat-messages :messages="messages"></chat-messages>
+							<chat-messages :user="{{ Auth::user() }}" :messages="messages"></chat-messages>
 
 
 

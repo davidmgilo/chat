@@ -15,6 +15,6 @@
 
 <script>
     export default {
-        props: ['messages']
+        props: ['messages', 'user']
     }
 </script>
