@@ -15867,9 +15867,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = {
     props: ['messages', 'user'],
-    computed: {
-        url: function url() {
-            return 'http:' + __WEBPACK_IMPORTED_MODULE_0_gravatar___default.a.url(this.user.email);
+    methods: {
+        url: function url(message) {
+            return 'http:' + __WEBPACK_IMPORTED_MODULE_0_gravatar___default.a.url(message.user.email);
         }
     }
 };
@@ -46671,7 +46671,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_vm._v(_vm._s(message.created_at))])]), _vm._v(" "), _c('img', {
       staticClass: "direct-chat-img",
       attrs: {
-        "src": _vm.url,
+        "src": _vm.url(message),
         "alt": "Message User Image"
       }
     }), _vm._v(" "), _c('div', {
